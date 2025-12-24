@@ -47,7 +47,7 @@ def main(checkpoint, output_dir, device, infsteps):
         policy = workspace.ema_model
     
 
-    new_test_start_seed = 111111
+    new_test_start_seed = 4000
     if hasattr(cfg.task.env_runner, 'test_start_seed'):
         print(f"正在修改 test_start_seed: 从 {cfg.task.env_runner.test_start_seed} 改为 {new_test_start_seed}")
         cfg.task.env_runner.test_start_seed = new_test_start_seed
